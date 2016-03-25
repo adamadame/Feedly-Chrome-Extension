@@ -1,18 +1,8 @@
-function remove(){
-  var par = document.getElementById("sideArea");
-  var chi = document.getElementById("proAdModule_part");
-  chi.innerHTML = "";
-  //Appending to DOM
-  document.par.appendChild(chi);}
-remove();
-
-// Sample Code
-/* // Checking page title
-if (document.title.indexOf("Google") != -1) {
-    //Creating Elements
-    var btn = document.createElement("BUTTON")
-    var t = document.createTextNode("CLICK ME");
-    btn.appendChild(t);
-    //Appending to DOM
-    document.body.appendChild(btn);
-} */
+// document.getElementById("proAdModule_part").remove();
+// document.addEventListener('onLoad', function(){document.getElementById("proAdModule_part").innerHTML = ""});
+setTimeout(function(){
+  document.getElementById('proAdModule_part').innerHTML = '';
+  document.getElementById('integrationstab_header').innerHTML = '';
+  document.getElementById('librarytab').innerHTML = '';
+  document.getElementById( 'fixedProfile' ).getElementsByTagName( 'div' )[0].innerHTML = '';
+}, 1000);
