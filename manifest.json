@@ -1,32 +1,25 @@
 {
 	"manifest_version": 2,
-	"name": "Remove Feedly Bloat",
-	"description": "Extension that removes the premium bloat in Feedly",
+
+	"name": "Feedly Debloater",
+	"description": "An extension that removes the premium bloat from Feedly",
 	"version": "1.0",
-	"permissions": [
-		"storage"
-	],
+	"permissions": ["storage"],
+
 	"icons": {
-		"16": "img/icon16.png",
-		"48": "img/icon48.png",
-		"128": "img/icon128.png"
+		"16": "img/feedly.png",
+		"48": "img/feedly.png",
+		"128": "img/feedly.png"
 	},
+
 	"browser_action": {
-		"default_icon": {
-			"19": "img/icon48.png",
-			"38": "img/icon48.png"
-		},
+		"default_icon": "img/feedly.png",
 		"default_popup": "popup.html"
 	},
-	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-	"web_accessible_resources": [
-		"img/icon128.png"
-	],
-	"content_scripts": [
-	    {
-	     "matches": ["http://*.feedly.com/*","https://*.feedly.com/*"],
-	      "js": ["js/bloatfree.js"],
-				"run_at": "document_end"
-	    }
-  	]
+
+	"content_scripts": [ {
+		"matches": ["http://*.feedly.com/*","https://*.feedly.com/*"],
+		"js": ["js/bloatfree.js"],
+		"run_at": "document_end"
+	} ]
 }

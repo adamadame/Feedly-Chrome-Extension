@@ -1,20 +1,83 @@
-/**
- * Chrome Extension Twitter Bootstrap 3 Template
- * Custom CSS
- *	
- */
-
-body, section {			/* Change width and height to own preferences */
-	width: 500px;
-	height: 400px;
-	overflow-x: hidden;
+body, section {
+	width: 250px;
 }
 
-/* Basic style tweaks */
-section { padding: 5px;}
-.navbar { margin-bottom: 2px; }
+a:hover {
+	color: #000;
+	text-decoration: none !important;
+}
 
-/* Scroll Bar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: red; }
+#top, #bot {
+	color: #000;
+}
+
+#top {
+	margin-top: 50px !important;
+}
+
+#bot {
+	margin-bottom: 50px !important;
+}
+
+#img {
+	margin: 20px 0px !important;
+}
+
+.custom-all {
+	display: block;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+*/
+
+/* Pulse Shrink */
+
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse-shrink {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
