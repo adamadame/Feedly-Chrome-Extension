@@ -25,7 +25,7 @@
 	"content_scripts": [
 	    {
 	     "matches": ["http://feedly.com/*","https://feedly.com/*"],
-	      "js": ["bloatfree.js"]
+	      "js": ["js/bloatfree.js"]
 	    }
   	]
 }
