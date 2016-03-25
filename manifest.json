@@ -24,8 +24,9 @@
 	],
 	"content_scripts": [
 	    {
-	     "matches": ["http://feedly.com/*","https://feedly.com/*"],
-	      "js": ["js/bloatfree.js"]
+	     "matches": ["http://*.feedly.com/*","https://*.feedly.com/*"],
+	      "js": ["js/bloatfree.js"],
+				"run_at": "document_end"
 	    }
   	]
 }

@@ -1,8 +1,10 @@
-var parent = document.getElementById("feedlyCenter");
-var child = document.getElementById("feedlyFrame");
-parent.removeChild(child);
-//Appending to DOM
-// document.body.appendChild(parent);
+function remove(){
+  var par = document.getElementById("sideArea");
+  var chi = document.getElementById("proAdModule_part");
+  chi.innerHTML = "";
+  //Appending to DOM
+  document.par.appendChild(chi);}
+remove();
 
 // Sample Code
 /* // Checking page title
