@@ -1,4 +1,4 @@
-# Chrome Extension Twitter Bootstrap 3 Template
+# Chrome Extensión Twitter Bootstrap 3 Template
 > A template for making a Google Chrome Extension, using Twitter Bootstrap 3.
 
 ![Screenshot](http://i.imgur.com/RK4GhXu.jpg)
@@ -32,7 +32,7 @@ This package has been made to quickly get yourself up and running with making a 
     - manifest.json
 	- popup.html
 	- README.md
-	
+
 ### Installation
 
 - Please either clone this repository or download as a ZIP file.
