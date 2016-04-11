@@ -5,7 +5,7 @@ setTimeout(function(){
   document.getElementById('integrationstab_header').innerHTML = '';
   document.getElementById('librarytab').innerHTML = '';
   document.getElementById( 'fixedProfile' ).getElementsByTagName( 'div' )[0].innerHTML = '';
-}, 1000);
+}, 2000);
 /*$(document).ready(function(){
   $("#proAdModule_part").remove();
 });*/
